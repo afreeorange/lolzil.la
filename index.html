@@ -1,57 +1,105 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta property="og:title" content="😆🦖" />
-        <meta property="og:description" content="Whatever, yo 🤣" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://lolzil.la/cover.gif" />
-        <meta property="og:url" content="https://lolzil.la" />
+    <meta property="og:title" content="😆 🦖" />
+    <meta property="og:description" content="Whatever, yo 🤣" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lolzil.la/og.png" />
+    <meta property="og:url" content="https://lolzil.la" />
 
-        <title>😆🦖</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-            html, body {
-                min-height: 100%;
-                background: rgb(2,0,36);
-                background: -webkit-linear-gradient(rgba(2,0,36,1) 0%, rgba(238,172,199,1) 0%, rgba(198,122,151,1) 100%);
-                background: -o-linear-gradient(rgba(2,0,36,1) 0%, rgba(238,172,199,1) 0%, rgba(198,122,151,1) 100%);
-                background: linear-gradient(rgba(2,0,36,1) 0%, rgba(238,172,199,1) 0%, rgba(198,122,151,1) 100%);
-                text-align: center;
-                min-height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            h1,
-            h1 a {
-                z-index: 999;
-                color: white;
-                font-family: 'Monoton', Helvetica, Arial, sans-serif;
-                font-size: 11vw;
-                font-weight: normal;
-                text-decoration: none;
-                text-shadow: 0px 0px 10px #511647;
-            }
-            h1 a:hover {
-                color: red;
-            }
-            #zilla {
-                background: url("lolzilla.gif");
-                -webkit-background-size: 200px;
-                background-size: 200px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- https://giphy.com/gifs/heyviolet-dancing-hey-violet-brand-new-moves-3owyp35sZAWHEbdMSA -->
-        <h1><a href="/lolz">WHATEVER, BRO 🤣</a></h1>
-        <div id="zilla"></div>
-    </body>
+    <title>It's only an opinion, bro. 🤣</title>
+    <style>
+      html {
+        background-color: #990000;
+        box-sizing: border-box;
+        height: 100%;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      body {
+        font-weight: normal;
+        margin: 0;
+        min-height: 100%;
+        padding: 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      h1 {
+        display: none;
+      }
+      div {
+        bottom: 0;
+        display: grid;
+        grid-template-areas: "zilla lol";
+        grid-template-columns: 500px 300px;
+        left: 0;
+        position: absolute;
+      }
+      span {
+        display: block;
+      }
+      span > img {
+        width: 100%;
+      }
+      span:nth-of-type(1) {
+        grid-area: lol;
+        margin-top: 6em;
+      }
+      span:nth-of-type(2) {
+        grid-area: zilla;
+      }
+
+      @media all and (max-width: 840px) {
+        body {
+          background: #01629b;
+        }
+        div {
+          display: block;
+          height: 100%;
+          position: relative;
+        }
+        span {
+          text-align: center;
+          width: 100%;
+        }
+        span:nth-of-type(1) {
+          background: #101010;
+          height: 49vh;
+          margin-top: 0;
+        }
+        span:nth-of-type(1) img {
+          width: 27vh;
+        }
+        span:nth-of-type(2) {
+          bottom: 0;
+          position: absolute;
+        }
+        span:nth-of-type(2) img {
+          width: 35vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Yeah see, that's just, like, your
+      <em>opinion</em>
+      bro.
+    </h1>
+    <div>
+      <span>
+        <img src="lol.png" alt="That's just like your opinion man." />
+      </span>
+      <span>
+        <img src="zilla.png" alt="A T.Rex in a suit. Source unknown." />
+      </span>
+    </div>
+  </body>
 </html>
