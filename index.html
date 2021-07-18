@@ -34,6 +34,9 @@
       h1 {
         display: none;
       }
+      a {
+        text-decoration: none;
+      }
       div {
         bottom: 0;
         display: grid;
@@ -48,11 +51,11 @@
       span > img {
         width: 100%;
       }
-      span:nth-of-type(1) {
+      span:nth-child(1) {
         grid-area: lol;
         margin-top: 6em;
       }
-      span:nth-of-type(2) {
+      span:nth-child(2) {
         grid-area: zilla;
       }
 
@@ -86,7 +89,12 @@
         }
       }
     </style>
-    <script async defer data-domain="lolzil.la" src="https://plausible.io/js/plausible.js"></script>
+    <script
+      async
+      defer
+      data-domain="lolzil.la"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
   </head>
   <body>
     <h1>
@@ -94,13 +102,15 @@
       <em>opinion</em>
       bro.
     </h1>
-    <div>
-      <span>
-        <img src="lol.png" alt="That's just like your opinion man." />
-      </span>
-      <span>
-        <img src="zilla.png" alt="A T.Rex in a suit. Source unknown." />
-      </span>
-    </div>
+    <a href="/lolz">
+      <div>
+        <span>
+          <img src="lol.png" alt="That's just like your opinion man." />
+        </span>
+        <span>
+          <img src="zilla.png" alt="A T.Rex in a suit. Source unknown." />
+        </span>
+      </div>
+    </a>
   </body>
 </html>
