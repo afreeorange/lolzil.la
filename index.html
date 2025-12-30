@@ -31,13 +31,13 @@
         max-width: 100%;
         height: auto;
       }
-      h1 {
+      header {
         display: none;
       }
       a {
         text-decoration: none;
       }
-      div {
+      main {
         bottom: 0;
         display: grid;
         grid-template-areas: "zilla lol";
@@ -97,20 +97,25 @@
     ></script>
   </head>
   <body>
-    <h1>
-      Yeah see, that's just, like, your
-      <em>opinion</em>
-      bro.
-    </h1>
-    <a href="/lolz">
-      <div>
-        <span>
-          <img src="lol.png" alt="That's just like your opinion man." />
-        </span>
-        <span>
-          <img src="zilla.png" alt="A T.Rex in a suit. Source unknown." />
-        </span>
-      </div>
-    </a>
+    <header>
+      <h1>
+        Yeah see, that's just, like, your
+        <em>opinion</em>
+        bro.
+      </h1>
+    </header>
+    <main>
+      <span>
+        <img src="lol.png" alt="That's just like your opinion man." />
+      </span>
+      <span>
+        <img src="zilla.png" alt="A T.Rex in a suit. Source unknown." />
+      </span>
+    </main>
+    <script>
+      document.querySelector("main").addEventListener("dblclick", () => {
+        location.href = "https://lol.nikhil.io/lolz";
+      });
+    </script>
   </body>
 </html>

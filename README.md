@@ -1,18 +1,16 @@
-[lolzil.la](https://lolzil.la/)
-===============================
+# [lol.nikhil.io](https://lol.nikhil.io/)
 
 🤷‍♂️ Will do something with this soon.
 
 ```bash
-aws s3 sync --size-only --exclude "*.git*" . s3://lolzil.la/
+aws s3 sync --size-only --exclude "*.git*" . s3://lol.nikhil.io/
 ```
 
-TODO, etc
----------
+## TODO et al
 
-* Use `sharp` for thumbnails
-    - [Resize Docs](https://sharp.pixelplumbing.com/api-resize)
-    - GIFs?
-    - Videos?
-* See [this near-complete example](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html) of how to do this with Node + Sharp, S3, and Lambda
-* [Old GIF](https://giphy.com/gifs/heyviolet-dancing-hey-violet-brand-new-moves-3owyp35sZAWHEbdMSA) 
+- Use `sharp` for thumbnails
+  - [Resize Docs](https://sharp.pixelplumbing.com/api-resize)
+  - GIFs?
+  - Videos?
+- See [this near-complete example](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html) of how to do this with Node + Sharp, S3, and Lambda
+- [Old GIF](https://giphy.com/gifs/heyviolet-dancing-hey-violet-brand-new-moves-3owyp35sZAWHEbdMSA)
